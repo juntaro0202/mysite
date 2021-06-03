@@ -74,7 +74,7 @@ export default {
         {
           icon: 'mdi-bee',
           title: '読書会',
-          to: '/book_club'
+          to: '/bookClub'
         },
         {
           icon: 'mdi-feather',
