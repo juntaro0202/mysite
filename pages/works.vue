@@ -11,13 +11,16 @@
           :key="i"
           :color="item.color"
           :icon="item.icon"
+          :title="item.title"
           fill-dot
         >
           <v-card
             :color="item.color"
             dark
           >
-            <v-card-title class="text-h6">
+            <v-card-title
+              :title="item.title"
+             class="text-h6">
               <h2 class="text-h4 white--text font-weight-light">
                 Title 1
               </h2>
@@ -46,18 +49,22 @@
         {
           color: 'red',
           icon: 'mdi-youtube',
+          title: 'youtube',
         },
         {
           color: 'blue',
           icon: 'mdi-twitter',
+          title: 'youtub',
         },
         {
           color: 'purple darken-1',
           icon: 'mdi-bee',
+          title: 'youtu',
         },
         {
           color: 'green lighten-1',
           icon: 'mdi-book',
+          title: 'yout',
         },
       ],
     }),
