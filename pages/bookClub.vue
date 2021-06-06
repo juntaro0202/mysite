@@ -1,34 +1,60 @@
 <template>
   <v-container>
     <h2>読書会</h2>
-    <p>こんな感じでやってます。詳細はこちら</p>
-    <v-row>
-      <v-col
-        v-for="n in 9"
-        :key="n"
-        class="d-flex child-flex"
-        cols="4"
+    <p>こんな感じでやってます。</p>
+    <v-btn
+      color="purple"
+      class="ma-2 white--text"
+      href="http://polis-dokusyokai.com/"
+    >
+      policeサイト
+      <v-icon
+        right
       >
-        <v-img
-          :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-          :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-          aspect-ratio="1"
-          class="grey lighten-2"
+        mdi-book
+      </v-icon>
+    </v-btn>
+  <v-card
+    class="mx-auto"
+    
+  >
+    <v-container fluid>
+      <v-row dense>
+        <v-col
+          v-for="card in cards"
+          :key="card.title"
+          :cols="card.flex"
         >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
+          <v-card>
+            <v-img
+              :src="card.src"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="200px"
             >
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-    </v-row>
+              <v-card-title v-text="card.title"></v-card-title>
+            </v-img>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-card>
   </v-container>
 </template>
+
+<script>
+  export default {
+    data: () => ({
+      cards: [
+        { title: '読書会１', src: 'あ.png', flex: 4 },
+        { title: '読書会１', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 4 },
+        { title: '読書会１', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 4 },
+        { title: '読書会２', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
+        { title: '読書会３', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+        { title: '読書会３', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
+        { title: '読書会３', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
+        { title: '読書会３', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
+      ],
+    }),
+  }
+</script>

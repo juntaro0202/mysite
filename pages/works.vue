@@ -2,6 +2,8 @@
   <v-container>
     <v-row justify="center" align="center">
       <h2>じゅんちゃんの活動</h2>
+    </v-row>
+    <v-row justify="center">
       <v-timeline
         align-top
         :dense="$vuetify.breakpoint.smAndDown"
@@ -12,27 +14,28 @@
           :color="item.color"
           :icon="item.icon"
           :title="item.title"
+          :content="item.content"
+          :href="item.href"
           fill-dot
         >
           <v-card
             :color="item.color"
-            dark
           >
             <v-card-title
-              :title="item.title"
              class="text-h6">
               <h2 class="text-h4 white--text font-weight-light">
-                Title 1
+                {{item.title}}
               </h2>
             </v-card-title>
             <v-card-text class="white text--primary">
-              <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
+              <p>{{item.content}}</p>
               <v-btn
                 :color="item.color"
+                :href="item.href"
                 class="mx-0"
                 outlined
               >
-                Button
+                詳しく
               </v-btn>
             </v-card-text>
           </v-card>
@@ -50,21 +53,29 @@
           color: 'red',
           icon: 'mdi-youtube',
           title: 'youtube',
+          content: 'youtubeにて哲学入門チャンネルを開設しています。主に時事ネタと哲学を絡めた話をしています。',
+          href: 'https://www.youtube.com/channel/UCa6oNOr1S251sHs8rile4Rw',
         },
         {
           color: 'blue',
           icon: 'mdi-twitter',
-          title: 'youtub',
+          title: 'twitter',
+          content: 'twitterはじめてみました。反陰部論社として日夜ツイートしてます。',
+          href: 'https://twitter.com/junchann0202?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
         },
         {
           color: 'purple darken-1',
           icon: 'mdi-bee',
-          title: 'youtu',
+          title: '読書会',
+          content: '読書会を主催しています。哲学書だけではなく、教養書まで幅広く扱い、気楽に来れる雰囲気のものを目指しています。現在はオンラインのみでの開催です。',
+          href: 'http://polis-dokusyokai.com/',
         },
         {
           color: 'green lighten-1',
           icon: 'mdi-book',
-          title: 'yout',
+          title: '書籍',
+          content: 'さくっと著名な哲学書の内容が分かる本を書きました。',
+          href: 'https://amzn.to/3bNTCIK',
         },
       ],
     }),

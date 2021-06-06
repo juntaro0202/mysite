@@ -5,21 +5,36 @@
         <ul>哲学入門チャンネル</ul>
         <ul>時事ネタとか喋ってます。たまにライブしたり、会員さん限定の読書会もしてます。</ul>
       </p>
+   
     <v-row>
+      <v-col cols="9">
       <iframe width="424" height="238"
         src="https://www.youtube.com/embed/cOPSH5VTFlw"
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+      </v-col>
 
-      <v-card class="mx-auto">
-      <v-card-title>
-        <v-icon large left color="#26c6da">mdi-twitter</v-icon>
-      </v-card-title>
-        <v-card-text class="text font-weight-bold">
-        <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '3' }"/>
-        </v-card-text>
-      </v-card>
+      <v-col cols="3">
+        <v-card>
+          <v-toolbar
+            color="blue"
+            dark
+          >
+          <v-toolbar-title>最新のチュイッター</v-toolbar-title>
+
+            <v-spacer></v-spacer>
+          <v-btn icon>
+            <v-icon>mdi-twitter</v-icon>
+          </v-btn>
+          </v-toolbar>
+
+          <v-card-text class="text font-weight-bold">
+          <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '3' }"/>
+          </v-card-text>
+        </v-card>
+      </v-col>
     </v-row>
+
   </v-container>
 </template>
 

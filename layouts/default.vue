@@ -68,7 +68,7 @@ export default {
         },
         {
           icon: 'mdi-youtube',
-          title: 'youtube',
+          title: 'youtube・twitter',
           to: '/youtube'
         },
         {
