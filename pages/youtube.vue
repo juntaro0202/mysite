@@ -1,10 +1,10 @@
 <template>
   <v-container>
       <h2>youtubeとかチュイッターとか</h2>
-      <p>
-        <ul>哲学入門チャンネル</ul>
-        <ul>時事ネタとか喋ってます。たまにライブしたり、会員さん限定の読書会もしてます。</ul>
-      </p>
+      <ul>
+        <li>哲学入門チャンネル</li>
+        <li>時事ネタとか喋ってます。たまにライブしたり、会員さん限定の読書会もしてます。</li>
+      </ul>
    
     <v-row>
       <v-col cols="9">
@@ -51,3 +51,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+ul {
+  list-style: none;
+}
+</style>

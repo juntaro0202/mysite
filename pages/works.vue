@@ -60,7 +60,7 @@
           color: 'blue',
           icon: 'mdi-twitter',
           title: 'twitter',
-          content: 'twitterはじめてみました。反陰部論社として日夜ツイートしてます。',
+          content: 'twitterはじめてみました。反陰部論者として日夜ツイートしてます。',
           href: 'https://twitter.com/junchann0202?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
         },
         {

@@ -1,7 +1,10 @@
 <template>
   <v-container>
     <h2>読書会</h2>
-    <p>こんな感じでやってます。</p>
+    <ul>
+      <li>このような本を使って読書会をしています。</li>
+      <li>ご興味があれば以下のサイトを覗いてみてください。</li>
+    </ul>
     <v-btn
       color="purple"
       class="ma-2 white--text"
@@ -58,3 +61,9 @@
     }),
   }
 </script>
+
+<style scoped>
+ul {
+  list-style: none;
+}
+</style>
