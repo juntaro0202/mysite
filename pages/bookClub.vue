@@ -2,8 +2,8 @@
   <v-container>
     <h2>読書会</h2>
     <ul>
-      <li>このような本を使って読書会をしています。</li>
-      <li>ご興味があれば以下のサイトを覗いてみてください。</li>
+      <li>読書会では様々な本を扱っています。</li>
+      <li>下の紫ボタンをぽちっとすると読書会のサイトに飛べます。</li>
     </ul>
     <v-btn
       color="purple"
@@ -33,7 +33,7 @@
               :src="card.src"
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="200px"
+              height="400px"
             >
               <v-card-title v-text="card.title"></v-card-title>
             </v-img>
@@ -49,14 +49,11 @@
   export default {
     data: () => ({
       cards: [
-        { title: '読書会１', src: 'あ.png', flex: 4 },
-        { title: '読書会１', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 4 },
-        { title: '読書会１', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 4 },
-        { title: '読書会２', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-        { title: '読書会３', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
-        { title: '読書会３', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
-        { title: '読書会３', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
-        { title: '読書会３', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
+        { title: 'レーニン著　　　　　　　　　　『帝国主義論』', src: 'レーニン.jpeg', flex: 4 },
+        { title: '塩野七生著　　　　　　　　　　『ローマ人の物語』', src: 'ローマは.jpeg', flex: 4 },
+        { title: 'フリードリヒ・ハイエク著　　　『貨幣発行自由化論』', src: '貨幣発行.jpeg', flex: 4 },
+        { title: '近内悠太著　　　　　　　　　　　　　　　　　　　『世界は贈与でできている　資本主義の「すきま」を埋める倫理学』', src: '世界は.jpeg', flex: 6 },
+        { title: 'ジェイミー・バートレット著　　　　　　　　　　　『操られる民主主義』', src: '操られる民主主義.jpeg', flex: 6 },
       ],
     }),
   }

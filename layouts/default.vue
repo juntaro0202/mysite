@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -26,10 +26,11 @@
     </v-navigation-drawer>
     <v-app-bar
       :clipped-left="clipped"
+      color="indigo darken-4"
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
     </v-app-bar>
@@ -39,17 +40,17 @@
       </v-container>
     </v-main>
     
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <Footer />
   </v-app>
 </template>
 
 <script>
+import Footer from '~/layouts/footer.vue'
+
 export default {
+   components: {
+    Footer
+  },
   data () {
     return {
       clipped: false,

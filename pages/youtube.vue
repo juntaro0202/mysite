@@ -7,34 +7,33 @@
       </ul>
    
     <v-row>
-      <v-col cols="9">
-      <iframe width="424" height="238"
-        src="https://www.youtube.com/embed/cOPSH5VTFlw"
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-      </v-col>
-
-      <v-col cols="3">
-        <v-card>
-          <v-toolbar
-            color="blue"
-            dark
-          >
-          <v-toolbar-title>最新のチュイッター</v-toolbar-title>
-
-            <v-spacer></v-spacer>
-          <v-btn icon>
-            <v-icon>mdi-twitter</v-icon>
-          </v-btn>
-          </v-toolbar>
-
-          <v-card-text class="text font-weight-bold">
-          <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '3' }"/>
-          </v-card-text>
-        </v-card>
+      <v-col cols="7">
+        <iframe width="350" height="238"
+          src="https://www.youtube.com/embed/cOPSH5VTFlw"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
       </v-col>
     </v-row>
 
+    <v-row>
+      <v-card>
+        <v-toolbar
+          color="blue"
+          dark
+        >
+        <v-toolbar-title>最新のチュイッター</v-toolbar-title>
+
+          <v-spacer></v-spacer>
+        <v-btn icon>
+          <v-icon>mdi-twitter</v-icon>
+        </v-btn>
+        </v-toolbar>
+
+        <v-card-text class="text font-weight-bold">
+        <Timeline :id="user_id" sourceType="profile" :options="{ tweetLimit: '3' }"/>
+        </v-card-text>
+      </v-card>
+    </v-row>
   </v-container>
 </template>
 
