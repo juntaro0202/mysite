@@ -33,7 +33,7 @@
               :src="card.src"
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="400px"
+              height="300px"
             >
               <v-card-title v-text="card.title"></v-card-title>
             </v-img>
@@ -49,11 +49,11 @@
   export default {
     data: () => ({
       cards: [
-        { title: 'レーニン著　　　　　　　　　　『帝国主義論』', src: 'レーニン.jpeg', flex: 4 },
-        { title: '塩野七生著　　　　　　　　　　『ローマ人の物語』', src: 'ローマは.jpeg', flex: 4 },
-        { title: 'フリードリヒ・ハイエク著　　　『貨幣発行自由化論』', src: '貨幣発行.jpeg', flex: 4 },
-        { title: '近内悠太著　　　　　　　　　　　　　　　　　　　『世界は贈与でできている　資本主義の「すきま」を埋める倫理学』', src: '世界は.jpeg', flex: 6 },
-        { title: 'ジェイミー・バートレット著　　　　　　　　　　　『操られる民主主義』', src: '操られる民主主義.jpeg', flex: 6 },
+        { title: 'レーニン著　『帝国主義論』', src: 'レーニン.jpeg', flex: 6 },
+        { title: '塩野七生著　『ローマ人の物語』', src: 'ローマは.jpeg', flex: 6 },
+        { title: '近内悠太著　『世界は贈与でできている　資本主義の「すきま」を埋める倫理学』', src: '世界は.jpeg', flex: 12 },
+        { title: 'フリードリヒ・ハイエク著　『貨幣発行自由化論』', src: '貨幣発行.jpeg', flex: 6 },
+        { title: 'ジェイミー・バートレット著　『操られる民主主義』', src: '操られる民主主義.jpeg', flex: 6 },
       ],
     }),
   }
