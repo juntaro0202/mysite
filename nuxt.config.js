@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - mysite2',
-    title: 'mysite2',
+    titleTemplate: '%s - 明日役に立たない知識',
+    title: 'じゅんちゃんのサイト',
     htmlAttrs: {
       lang: 'en'
     },
